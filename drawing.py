@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture('assets/2.mp4')# 0-for your webcam and path to some stock video
+cap = cv2.VideoCapture(0)# 0-for your webcam and path to some stock video
 
 while True:
     ret , frame = cap.read()
@@ -26,4 +26,5 @@ while True:
         break
 
 cap.release()
+
 cv2.destroyAllWindows()
